@@ -1,0 +1,7 @@
+# Configuración de rutas del Gateway
+# =====================================
+
+# Microservicio de Ventas
+spring.cloud.gateway.routes[0].id=ventas-service
+spring.cloud.gateway.routes[0].uri=lb://AOS-MICROSERVICIO-VENTAS
+spring.cloud.gateway.routes[0].predicates[0]=Path=/ventas/**
